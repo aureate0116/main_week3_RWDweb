@@ -1,4 +1,13 @@
-$color: #00cc99;
+@import "reset.scss";
+@import "variables.scss" ;
+@import "layout.scss";
+@import "index.scss";
+
+/*@import "page/index、pages1、pages2";*/
+
+/*
+
+$color: blue;
 
 .header {
   height: 200px;
@@ -21,3 +30,9 @@ $color: #00cc99;
     background-color: $color;
   }
 }
+
+
+h1{
+  font-size: 50px;
+}
+*/
