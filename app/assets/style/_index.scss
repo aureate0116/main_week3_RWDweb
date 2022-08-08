@@ -1,8 +1,4 @@
-.w1296{
-    max-width: 1296px;
-    margin: 0 auto;
-    padding:0 12px;
-}
+
 
 .banner{
     
@@ -13,7 +9,6 @@
     
     .title{  
         color: $color1;
-
         text-align: right;
         P{
             font-size: 36px;
@@ -35,9 +30,7 @@
     }
 
     @include pad(){
-        .w1296{
-            padding-right: 37px;
-        }
+        
         .title a{
             font-size: 20px;
             line-height: 30px;
@@ -48,10 +41,9 @@
 
     @include mobile(){
         padding: 0;
-        .w1296{
-            padding: 144px 14px ;
-            
-        }   
+        .container{
+            padding:144px 12px;
+        }
 
         .title{
             p{
@@ -74,7 +66,10 @@ h2{
     @include h2Font;
 }
 .slogan ,.classic , .joint , .recommend, .contactUs{
-    padding:80px 0px;
+    padding-top:80px;
+    @include mobile(){
+        padding-top: 40px;
+    }
 }
 
 @mixin pTitle{
@@ -116,11 +111,12 @@ h2{
     
     @include pad(){
         li{
-            width: 336px;
+            width: 43.75%;
+            margin-bottom: 50px;
         }
         ul{
             flex-wrap: wrap;
-            margin: auto 36px;
+           
         }
     }
 
@@ -129,9 +125,10 @@ h2{
          @include h2Font-RWD;
         }
         ul{
-            margin: 0 13px;
+            margin: 0;
         }
         li{
+            width: 92.8%;
             margin-top: 32.33px;
             
         }
@@ -143,14 +140,14 @@ h2{
     ul{
         display: flex;
         justify-content: space-between;
+        margin: 0 auto;
         margin-top: 48px;
+        
     }
     li{
         width: 32%;
     }
-    img{
-        width: 100%;
-    }
+    
     p{
         @include pTitle;
         @include fontFamily;
@@ -161,26 +158,21 @@ h2{
             flex-wrap: wrap;
         }
         li{
-            width: 43%;
-            margin: 0 216px;
+            width: 100%;
+            text-align: center;
             margin-bottom: 24px;
+           
         }
-        img{
-            width: 336px;
-        }
-
     }
+
     @include mobile(){
         h2{
            @include h2Font-RWD;
         }
         li{
-            width: 92.8%;
-            margin: 0 13px;
-            margin-bottom: 24px;
-        }
-        img{
             width: 100%;
+            text-align: center;
+            margin-bottom: 24px;
         }
         
     }
@@ -197,6 +189,7 @@ h2{
         display: flex;
         justify-content: space-between;
         margin-top: 48px;
+        padding-bottom: 80px;
     }
     li{
         width: 50%;
@@ -211,14 +204,12 @@ h2{
         margin:0px;
     }
     @include pad(){
-        .w1296{
-            padding: 0 36px;
-        }
         ul{
             flex-wrap: wrap;
+            padding-bottom:56px ;
         }
         li{
-            width: 96%;
+            width: 100%;
             margin-bottom: 24px;
         }
         img{
@@ -234,9 +225,9 @@ h2{
            margin: 0;
         }
         li{
-            width: 92.8%;
+            width: 100%;
             height: 240px;
-            margin: 24px 14px 24px 13px;
+            margin: 24px 0px;
             background-size: cover;
             background-position:absolute;
             margin-bottom: 88px;
@@ -282,7 +273,7 @@ h2{
         margin-top: 8px;
         margin-bottom: 48px;
     }
-    span{
+    label{
         color:#707070;
         font-size: 14px;
         line-height: 21px; 
@@ -293,11 +284,10 @@ h2{
     @include pad(){
         ul{
             flex-wrap:wrap;
-            margin: 0 12px;
         }
         li{
-            width: 43.75%;
-            margin: 24px 23px;
+            width: 48%;
+            margin-bottom: 24px;
         }
     }
 
@@ -306,10 +296,11 @@ h2{
             @include h2Font-RWD; 
         }
         ul{
-          margin: 24px 14px;
+          margin-top: 24px;
         }
         li{
-            width: 348px;
+            width:100%;
+            margin-bottom: 16px;
         }
     }   
 }
@@ -317,6 +308,8 @@ h2{
 .contactUs{
     width: 636px;
     margin: 0 auto;
+    margin-bottom: 80px;
+
     h2{
         margin-bottom: 24px;
     }
@@ -361,9 +354,9 @@ h2{
     }
 
     @include pad(){
-        
-        margin-top: -24px;
-        width: 567px;
+        width: 73.8%;
+        margin: 0 auto;
+       
         p{
             font-size: 16px;
             line-height: 24px; 
@@ -372,9 +365,10 @@ h2{
         form a{
             width: 336px;
             padding: 16px 136px;
+            margin-bottom: 40px;
         }
         form p .inputW{
-            width: 567px;
+            width: 100%;
         }
     }
 

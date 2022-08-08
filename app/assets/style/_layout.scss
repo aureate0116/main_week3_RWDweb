@@ -1,79 +1,83 @@
-
-
 .container{
-    background-color: $color2;
-}
-header{
-    max-width: 1296px;
+    max-width: 1320px;
     padding:0 12px;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    img{
-        width:80px ;
-        margin: 16px auto;
-    }
-    .menu {
-        display: flex;
-        margin-right: -32px;
-    }
-    .menu a{
-        @include bgReda;
-        font-size:20px;
-        line-height: 30px;
-        padding: 25px 32px;
-        display: block;
-    }
 
     @include pad(){
-        img{
-            margin-left: 36px;
-        }
-        .menu{
-            margin-right: 0px;
-        }
-        
+        padding:0px 36px;
     }
 
     @include mobile(){
-        flex-wrap: wrap;
-        padding:0;
-
-        img, .menu, .menu a{
-           margin:0;
-           padding: 0;
-        }
-        h1{
-            margin:16px auto;
-        }
-        .menu{
-            flex-wrap: wrap;
-        }
-        .menu li{
-            width: 186px;
-        }
-        .menu a{
-            text-align: center;
-            padding:12px 60px;
-            font-size:16px;
-            line-height: 24px;
-            border: 1px solid white;
-        }
-
+        padding:0px 14px 0px 13px;
     }
 }
 
+
+header {
+    background-color: $color2;
+    .container{
+        display: flex;
+        justify-content: space-between;
+
+        img{
+            width:80px ;
+            margin: 16px auto;
+        }
+        .menu {
+            display: flex;
+            margin-right: -32px;
+        }
+        .menu a{
+            @include bgReda;
+            font-size:20px;
+            line-height: 30px;
+            padding: 25px 32px;
+            display: block;
+        }
+
+        @include mobile(){
+            flex-wrap: wrap;
+            padding:0;
+
+            img, .menu, .menu a{
+            margin:0;
+            padding: 0;
+            }
+            h1{
+                margin:16px auto;
+            }
+            .menu{
+                flex-wrap: wrap;
+            }
+            .menu li{
+                width: 186px;
+            }
+            .menu a{
+                text-align: center;
+                padding:12px 60px;
+                font-size:16px;
+                line-height: 24px;
+                border: 1px solid white;
+            }
+
+        }
+    }   
+}
+
 footer{
-    max-width: 1296px;
-    margin: 0 auto;
-    padding: 23px 12px;
+    background-color: $color2;
+    padding-top: 60px;
+    padding-bottom:32px;
+
+    .container{
+     padding: 23px auto;
     .block{
         display: flex;
         justify-content:space-between;
     }
     .quickLink , .socialMedia{
         display: flex;
-        margin-top: 32px;
+       
     }
     .quickLink li{
         margin-right: 48px;
@@ -122,15 +126,16 @@ footer{
         a{
             @include bgReda;
         }
-        
+    
     }
 
     @include pad(){
+
         .link, .block, .quickLink, .socialMedia ,.quickLink li{
             padding: 0;
             margin:0px;
         }
-        padding:56px 36px 40px 36px;
+        
         .socialMedia img{
             width: 40px;
             margin-bottom: 24px;
@@ -147,13 +152,15 @@ footer{
     }
 
     @include mobile(){
+       margin-top: -26px;
+       margin-bottom: -8px;
+        
         .link, .socialMedia,  .socialMedia li ,.copyright ul li, .contact img{
             margin: 0;
             padding: 0;
         }
-
+        
         display: flex;
-        padding: 24px 16px ;
         flex-direction: column;
         .link {
             display: flex;
@@ -196,6 +203,6 @@ footer{
         }
 
     }
-
+}
 
 }

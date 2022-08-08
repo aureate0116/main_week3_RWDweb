@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--2022/08/06 15:00 ~ 16:30 (1.5hr) 
-  寫 header & footer + 研究/熟悉layout怎麼切 & 變數+scss寫法 不含RWD 
-  ~ 17:15  (45min) 寫RWD pad 調整CSS 
-  ~ 18:30 (1hr 15min) 寫RWD mobile 調整html
--->
+
 
 
 <head>
@@ -18,26 +14,25 @@
 
 <body>
   <div class="wrap">
-
-    <div class="container">
-        <header>
-          <h1><img src="assets/images/logo-white.png" alt="logo"></h1>
-          <ul class="menu">
-            <li><a href="#">系列鏡框</a></li>
-            <li><a href="#">門市據點</a></li>
-            <li><a href="#">部落格</a></li>
-            <li><a href="#">常見問題</a></li>
-          </ul>
-        </header>
-    </div>
+    <header>
+      <div class="container">
+          
+            <h1><img src="assets/images/logo-white.png" alt="logo"></h1>
+            <ul class="menu">
+              <li><a href="#">系列鏡框</a></li>
+              <li><a href="#">門市據點</a></li>
+              <li><a href="#">部落格</a></li>
+              <li><a href="#">常見問題</a></li>
+            </ul>
+          
+      </div>
+    </header>
   
     
     <%- contents %>
     
-
-
-    <div class="container">
-        <footer>
+    <footer>
+          <div class="container">
             <div class="link">
               <div class="block">
                   <ul class="quickLink">
@@ -61,7 +56,7 @@
               </div>
 
             </div>
-
+          
             
 
             <div class="copyright">
@@ -72,9 +67,10 @@
                 </ul>
             </div>
             
-          
-        </footer>
-    </div>
+      </div>
+             
+  </footer>
+    
 
   </div>
  

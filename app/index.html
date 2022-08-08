@@ -4,17 +4,12 @@ layout: ./app/layout.ejs
 engine: ejs
 current: index
 ---
-<!--2022/08/06 18:40 ~ 19:06 寫完banner區 html + 不含RWD CSS
- 20:45 ~ 11:00 寫完index.html+css , 包含第五週小組作業討論時間 
 
- 8/7 16:00 ~ 17:10 寫完 index.html pad+mobile css
- ~18:00 調整為%
--->
 
-<div class="container-w">
+
 
   <div class="banner">
-    <div class="w1296">
+    <div class="container">
         <div class="title">
             <p>Promise-Desert 2020 早春系列</p>
             <h1>看得清，才能看得遠</h1>
@@ -24,7 +19,8 @@ current: index
 
   </div>
 
-  <div class="slogan w1296">
+  <div class="slogan">
+    <div class="container">
     <h2>用專業的心，做專業的事</h2>
     <ul>
       <li>
@@ -49,8 +45,10 @@ current: index
       </li>
     </ul>
   </div>
+  </div>
 
-  <div class="classic w1296">
+  <div class="classic">
+    <div class="container">
     <h2>經典系列鏡框</h2>
     <ul>
       <li>
@@ -66,12 +64,12 @@ current: index
         <p>FUNCTIONAL</p>
       </li>
     </ul>
-
+  </div>
   </div>
 
 
   <div class="joint">
-    <div class="w1296">
+    <div class="container">
         <h2>聯名設計鏡框</h2>
         <ul>
           <li class="bg1">
@@ -86,7 +84,8 @@ current: index
     </div>
   </div>
 
-  <div class="recommend w1296">
+  <div class="recommend">
+    <div class="container">
     <h2>顧客推薦</h2>
     <ul>
       <li>
@@ -123,21 +122,24 @@ current: index
       </li>
     </ul>
   </div>
+  </div>
 
   <div class="contactUs">
+    
       <h2>聯絡我們</h2> 
       <p>我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。</p>
       <form action="index.html" method="post">
-        <p><span>姓名</span> <br/><input class="inputW" type="text" value="陳小明"> </p>
-        <p><span>連絡電話</span><br/> <input class="inputW" type="tel" value="0912-345-678"></p>
-        <p><span>電子郵件</span> <br/><input class="inputW" type="email" value="example@email.com"></p>
-        <p><span>example@email.com</span> <br/><input class="inputW" type="text" value="請輸入您的意見"></p>
+        <p><label>姓名</label> <br/><input class="inputW" type="text" value="陳小明"> </p>
+        <p><label>連絡電話</label><br/> <input class="inputW" type="tel" value="0912-345-678"></p>
+        <p><label>電子郵件</label> <br/><input class="inputW" type="email" value="example@email.com"></p>
+        <p><label>example@email.com</label> <br/><input class="inputW" type="text" value="請輸入您的意見"></p>
         <p><input type="checkbox" value="">我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</p>
         <a href="#"class="btn-submit" >確認送出</a>
       </form>
+    
   </div>
 
   
-</div>
+
 
 
