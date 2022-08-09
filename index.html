@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--2022/08/06 15:00 ~ 16:30 (1.5hr) 
-  寫 header & footer + 研究/熟悉layout怎麼切 & 變數+scss寫法 不含RWD 
-  ~ 17:15  (45min) 寫RWD pad 調整CSS 
-  ~ 18:30 (1hr 15min) 寫RWD mobile 調整html
--->
+
 
 
 <head>
@@ -18,31 +14,27 @@
 
 <body>
   <div class="wrap">
-
-    <div class="container">
-        <header>
-          <h1><img src="assets/images/logo-white.png" alt="logo"></h1>
-          <ul class="menu">
-            <li><a href="#">系列鏡框</a></li>
-            <li><a href="#">門市據點</a></li>
-            <li><a href="#">部落格</a></li>
-            <li><a href="#">常見問題</a></li>
-          </ul>
-        </header>
-    </div>
+    <header>
+      <div class="container">
+          
+            <h1><a href="index.html"><img src="assets/images/logo-white.png" alt="logo"></a></h1>
+            <ul class="menu">
+              <li><a href="product_optical.html">系列鏡框</a></li>
+              <li><a href="#">門市據點</a></li>
+              <li><a href="#">部落格</a></li>
+              <li><a href="#">常見問題</a></li>
+            </ul>
+          
+      </div>
+    </header>
   
     
-    <!--2022/08/06 18:40 ~ 19:06 寫完banner區 html + 不含RWD CSS
- 20:45 ~ 11:00 寫完index.html+css , 包含第五週小組作業討論時間 
+    
 
- 8/7 16:00 ~ 17:10 寫完 index.html pad+mobile css
- ~18:00 調整為%
--->
 
-<div class="container-w">
 
   <div class="banner">
-    <div class="w1296">
+    <div class="container">
         <div class="title">
             <p>Promise-Desert 2020 早春系列</p>
             <h1>看得清，才能看得遠</h1>
@@ -52,7 +44,8 @@
 
   </div>
 
-  <div class="slogan w1296">
+  <div class="slogan">
+    <div class="container">
     <h2>用專業的心，做專業的事</h2>
     <ul>
       <li>
@@ -77,8 +70,10 @@
       </li>
     </ul>
   </div>
+  </div>
 
-  <div class="classic w1296">
+  <div class="classic">
+    <div class="container">
     <h2>經典系列鏡框</h2>
     <ul>
       <li>
@@ -94,12 +89,12 @@
         <p>FUNCTIONAL</p>
       </li>
     </ul>
-
+  </div>
   </div>
 
 
   <div class="joint">
-    <div class="w1296">
+    <div class="container">
         <h2>聯名設計鏡框</h2>
         <ul>
           <li class="bg1">
@@ -114,7 +109,8 @@
     </div>
   </div>
 
-  <div class="recommend w1296">
+  <div class="recommend">
+    <div class="container">
     <h2>顧客推薦</h2>
     <ul>
       <li>
@@ -151,35 +147,36 @@
       </li>
     </ul>
   </div>
+  </div>
 
   <div class="contactUs">
+    
       <h2>聯絡我們</h2> 
       <p>我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。</p>
       <form action="index.html" method="post">
-        <p><span>姓名</span> <br/><input class="inputW" type="text" value="陳小明"> </p>
-        <p><span>連絡電話</span><br/> <input class="inputW" type="tel" value="0912-345-678"></p>
-        <p><span>電子郵件</span> <br/><input class="inputW" type="email" value="example@email.com"></p>
-        <p><span>example@email.com</span> <br/><input class="inputW" type="text" value="請輸入您的意見"></p>
+        <p><label>姓名</label> <br/><input class="inputW" type="text" value="陳小明"> </p>
+        <p><label>連絡電話</label><br/> <input class="inputW" type="tel" value="0912-345-678"></p>
+        <p><label>電子郵件</label> <br/><input class="inputW" type="email" value="example@email.com"></p>
+        <p><label>example@email.com</label> <br/><input class="inputW" type="text" value="請輸入您的意見"></p>
         <p><input type="checkbox" value="">我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</p>
         <a href="#"class="btn-submit" >確認送出</a>
       </form>
+    
   </div>
 
   
-</div>
+
 
 
 
     
-
-
-    <div class="container">
-        <footer>
+    <footer>
+          <div class="container">
             <div class="link">
               <div class="block">
                   <ul class="quickLink">
-                    <li><a href="#">首頁</a></li>
-                    <li><a href="#">系列鏡框</a></li>
+                    <li><a href="index.html">首頁</a></li>
+                    <li><a href="product_optical.html">系列鏡框</a></li>
                     <li><a href="#">門市據點</a></li>
                     <li><a href="#">部落格</a></li>
                     <li><a href="#">常見問題</a></li>
@@ -198,7 +195,7 @@
               </div>
 
             </div>
-
+          
             
 
             <div class="copyright">
@@ -209,9 +206,10 @@
                 </ul>
             </div>
             
-          
-        </footer>
-    </div>
+      </div>
+             
+  </footer>
+    
 
   </div>
  
